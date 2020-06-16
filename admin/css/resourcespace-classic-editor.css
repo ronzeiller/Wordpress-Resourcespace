@@ -1,0 +1,14 @@
+.classic-editor-dialog-wrapper {
+    z-index: 10001 !important;
+    min-width: 600px !important;
+    max-width: 1000px !important;
+    width: 100% !important;
+    margin-top: 50px !important;
+    margin-left: 150px !important;
+    max-height: 600px;
+    overflow-y: auto !important;
+}
+
+#classic-editor-dialog {
+    overflow: "auto";
+}
