@@ -1,0 +1,267 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.mce-content-body *[contentEditable=false][data-mce-selected] {
+    outline: 2px solid red;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 20px 1px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    min-width: 300px;
+    min-height: 200px;
+}
+
+.modal-header,
+.modal-footer {
+    padding: 15px;
+    display: flex;
+}
+
+.modal-header {
+    border-bottom: 1px solid #eeeeee;
+    color: #4AAE9B;
+    justify-content: space-between;
+}
+
+.modal-footer {
+    border-top: 1px solid #eeeeee;
+    justify-content: flex-end;
+}
+
+.modal-body {
+    position: relative;
+    max-height: 100%;
+    height: 100%;
+    /*    padding: 20px 10px;*/
+}
+
+.btn-close {
+    border: none;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4AAE9B;
+    background: transparent;
+    float: right;
+}
+
+.btn-green {
+    color: white;
+    background: #4AAE9B;
+    border: 1px solid #4AAE9B;
+    border-radius: 2px;
+}
+
+.adra-main-search-form .main-input {
+    float: left;
+    width: 230px;
+}
+
+.adra-main-search-form .main-input input {
+    height: 2.25em;
+    padding: 2px 9px 2px 9px;
+    font-size: 18px;
+    max-width: 230px;
+}
+
+.adra-advanced-search-form {
+    max-width: 810px;
+    float: left;
+    paddin: 10px 5px 10px 5px;
+}
+
+.adra-advanced-search-form .custom-input {
+    float: left;
+    height: 50px;
+    margin: 5px 10px 10px 0px;
+}
+
+.adra-advanced-search-form .custom-input input,
+.adra-advanced-search-form .custom-input select {
+    line-height: 30px;
+    height: 30px;
+}
+
+.adra-advanced-search-form .custom-input label {
+    display: block;
+}
+
+.search-button-wrapper {
+    float: left;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.search-button {
+    font-size: 25px;
+}
+
+.advanced-search-wrapper {
+    padding-top: 10px;
+}
+
+.advanced-search-wrapper a {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.resourcespace-adra {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resourcespace-adra-search-results {
+    max-width: 900px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.resourcespace-adra-search-results .resource-listing {
+    max-width: 1000px;
+    width: 95%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.resourcespace-adra-search-results .resource-listing .details {
+    float: right;
+    font-size: 25px;
+}
+
+.resource-details .row-details {
+    float: left;
+    width: 95%;
+    padding: 5px 15px 5px 15px;
+    border-top: 1px solid #ccc;
+}
+
+.resource-details .row-details .link-details {
+    float: left;
+}
+
+.resource-details .row-details .button-details {
+    float: right;
+}
+
+.resource-listing .resource-title {
+    font-weight: bold;
+    padding: 10px 0px 10px 20px;
+    vertical-align: text-top;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.modal-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+    position: absolute1;
+    z-index: 99999;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-container {
+    position: absolute1;
+    z-index: 99999;
+    left: 420px;
+
+    width: 930px;
+    max-width: 100%;
+    margin: 40px auto 0;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 85%;
+
+    border: 5px solid black;
+}
+
+
+.modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.form-label>.form-control {
+    margin-top: 0.5em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
+    line-height: 1.5;
+    border: 1px solid #ddd;
+}
+
+/*
+* The following styles are auto-applied to elements with
+* transition="modal" when their visibility is toggled
+* by Vue.js.
+*
+* You can easily play with the modal transition by editing
+* these styles.
+*/
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-leave-active {
+    opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

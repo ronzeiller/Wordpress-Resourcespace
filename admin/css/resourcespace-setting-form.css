@@ -1,0 +1,11 @@
+.role_wrapper {
+    border-bottom: 1px solid black;
+    max-width: 420px;
+    padding: 10px 0px 10px 0px;
+}
+
+.role_wrapper .first-col-role,
+.role_wrapper .second-col-role {
+    float: left;
+    width: 200px;
+}
