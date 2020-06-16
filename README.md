@@ -1,4 +1,4 @@
-# Project Title
+# WordPress ResourceSpace
 
 This plugin allow users of the WordPress CMS to integrate resources which are stored in a ResourceSpace repository in their content. Resources can be embedded directly from the ResourceSpace server, or synchronized and replicated in the local WordPress media library. 
 
