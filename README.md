@@ -37,7 +37,9 @@ To create a distributable version of the plugin, use a copy of the project folde
 * admin/js/src/
 * node_modules
 
-Upload the files to the plugins directory of the target WordPress instance, or zip the files for easy distribution. 
+Upload the files to the plugins directory of the target WordPress instance, or zip the files for easy distribution.
+
+*Note*: For users of the self-hosted version, note that this plugin requires ResourceSpace version 9.3 or higher.  
 
 ## Configuration and Usage
 
