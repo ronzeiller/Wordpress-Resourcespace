@@ -258,7 +258,8 @@ class resourcespace
 
         
         $processed_fields = array();
-        foreach($resource_types as $resource_ref=>$resource_name){
+        //foreach($resource_types as $resource_ref=>$resource_name){
+      	$resource_ref = '-1';
             $fields = $this->get_resource_field_data($resource_ref);
             if($fields){
                 foreach($fields as $field){
@@ -303,7 +304,7 @@ class resourcespace
 
                 }
             }
-        }
+        //}
         return $form_fields;
     }
     function create_search_array( $submited_values){
