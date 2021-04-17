@@ -30,7 +30,7 @@ class Resourcespace_Adra_Admin
      * @access   private
      * @var      string    $plugin_name    The ID of this plugin.
      */
-    private $plugin_name;
+    protected $plugin_name;
 
     /**
      * The version of this plugin.
@@ -39,7 +39,7 @@ class Resourcespace_Adra_Admin
      * @access   private
      * @var      string    $version    The current version of this plugin.
      */
-    private $version;
+    protected $version;
 
     /**
      * Initialize the class and set its properties.
