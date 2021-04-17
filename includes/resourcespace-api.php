@@ -1,5 +1,5 @@
 <?php
-define("RESOURCESPACE_OPTION", "resourcespace_options");
+defined("RESOURCESPACE_OPTION") or define("RESOURCESPACE_OPTION", "resourcespace_options");
 
 class resourcespace
 {
