@@ -76,7 +76,7 @@ class Resourcespace_Adra_Admin
          * class.
          */
 
-        //wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/resourcespace-adra-admin.css', array(), $this->version, 'all' );
+        wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/resourcespace-adra-admin.css', array(), $this->version, 'all' );
         //wp_enqueue_style( $this->plugin_name.'_selector', plugin_dir_url( __FILE__ ) . 'css/resourcespace-adra-admin-month-selector.css', array(), $this->version, 'all' );
 
         $wp_scripts = wp_scripts();
