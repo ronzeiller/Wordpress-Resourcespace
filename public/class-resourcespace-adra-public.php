@@ -137,7 +137,7 @@ class Resourcespace_Adra_Public {
 		$resourcespace = new resourcespace( $opt_val );
 		$unprocessed_atts = "";
 		$resource_id = isset($atts['id'])?$atts['id']:'';
-		$size_id = isset($atts['id'])?$atts['size_id']:'';
+		$size_id = isset($atts['size_id'])?$atts['size_id']:'';
 		if( is_array($atts) ){
 			foreach($atts as $key=>$value){
 				if( $key!='id' && $key!='size_id' ){
